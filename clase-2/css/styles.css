@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+    background-color: #333;
+}
+
+.item {
+    display: i;
+    background-color: #666;
+    margin: 0.5em 1em;
+    right: 0;
+}

@@ -1,0 +1,34 @@
+/* 
+    Alineación en el eje secundario
+    Existen 2 propiedades para ello align-items y align-content.
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #333;
+    height: 30vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    /*align-items: stretch;/* valor por defecto */
+    /* align-items: flex-end; */
+    /* align-items: flex-end; */
+    align-items: stretch;
+    /* align-items: baseline; alinea respecto a la base del texto o contenido */
+    /* align-content: stretch; */
+}
+
+.item {
+    background-color: #666;
+    border: 1px solid #000;
+    width: 33.3%;
+    /* height: 20%; */
+}
+
+/* .item:nth-child(2),
+.item:nth-child(8) {
+    font-size: 250%;
+} */

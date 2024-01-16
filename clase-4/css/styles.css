@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #333;
+    height: 30vh;
+
+    display: flex;
+    flex-flow: column wrap;
+    /* alinea los elementos hijos respecto al eje principal, si tengo row(fila) será el eje x, si tengo column será el eje y. La alineación sólo se hará si hay espacio disponible. justify-content: flex-start (valor por defecto), center, flex-end, space-between, space-around, space-evenly*/
+    /* justify-content: flex-start; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    justify-content: space-evenly;
+}
+
+.item {
+    border: 1px solid #000;
+    width: 20%;
+    height: 20%;
+    background-color: #666;
+}

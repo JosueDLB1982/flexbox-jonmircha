@@ -8,8 +8,9 @@
 
 
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-direction: column-reverse;
+    flex-wrap: wrap-reverse; */
+    flex-flow: column-reverse wrap-reverse; /*combina ambas propiedades */
     /* flex-direction: row-reverse; */
     /* flex-direction: column; */
     /* flex-direction: column-reverse; */
@@ -18,5 +19,18 @@
 .item {
     background-color: #666;
     width: 20%;
+    height: 20%;
     border: 1px solid #000;
 }
+
+/* .item1 {
+    width: 25%;
+}
+
+.item2 {
+    width: 50%;
+}
+
+.item3 {
+    width: 25%;
+} */

@@ -1,0 +1,45 @@
+/*
+    Propiedades de los hijos
+    flex-grrow: 0
+    flex-shrink: 1
+    flex-basis: auto  -> Es el tamaño del elemento hijo dentro de la línea de la caja flexbox.
+    Si la caja (padre) tiene flex-direction row (fila) flex-basis representa el width (ancho)
+    Si la caja tiene flex-direction column, flex-basis representa el height (alto).
+    flex-basis tiene prioridad sobre width en el caso de row o height en el caso de column, es decir, tiene una especificidad mayor.
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #444;
+}
+
+.container {
+    background-color: #333;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: flex-start;
+}
+
+.item {
+    background-color: #666;
+    border: 1px solid #000;
+    flex-basis: 150px;
+
+    /* la propiedad flex es un shorthand de flex-grow, flex.shrink y flex-basis*/
+    flex: 1 1 auto; /* valores por defecto */
+    /* flex: 0 1 33.3333%;*/ /* en este caso tendrían efectos muy similares en los contenedores */
+}
+
+/* .item:nth-child(2) {
+    flex-grow: 2;
+} */
+
+
+

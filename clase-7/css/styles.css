@@ -1,0 +1,36 @@
+/*
+    Propiedades de los hijos
+    flex-grrow: 0
+    flex-shrink: 1 factor de reducción
+    flex-basis: auto
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #444;
+}
+
+.container {
+    background-color: #333;
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: flex-start;
+}
+
+.item {
+    background-color: #666;
+    border: 1px solid #000;
+    flex-shrink: 1;
+}
+
+.item:nth-child(2) {
+    flex-shrink: 2; /* en este caso el espacio de reducción se divide entre 4 y este elemento reduce 2 de esas partes */
+}
+
